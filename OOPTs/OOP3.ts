@@ -1,43 +1,44 @@
-// Creating POP.ts file into OOP form
+// Write an application which performs addition and substraction of 2 numbers
 
-// Kaay karaych aahe? (Method) -> Addition & Substraction
+// Kay karayecha ahe ? (Methods)    -> Addition & Substraction
 
-// Te karayla kay kay lagnare -> 2 numbers
-class Arithmetic
+// Te karayeala kay lanagar ahe? (Data) -> 2 numbers
+
+class Arithematic
 {
-    //charactristics
-public No1 : number = 0
-public No2 : number = 0
+    // Data / Characteristics
+    public No1 : number;
+    public No2 : number;
 
-// To initilize data create constructor
-public constructor(A : number , B : number)
-{
-   this.No1 = A
-   this.No2 = B
+    public constructor(A : number, B : number)
+    {
+        this.No1 = A;
+        this.No2 = B;
+    }
 
+    public Addition(): number
+    {
+        return this.No1+this.No2;
+    }
+
+    public Substraction() : number
+    {
+        return this.No1-this.No2;
+    }
 }
+var obj1 = new Arithematic(11,10);
+var obj2 = new Arithematic(21,15);
 
-public Addition() : number
-{
-return this.No1+this.No2
-}
+var Ret : number = 0;
 
-public Substraction() : number
-{
-    return this.No1-this.No2
-}
+Ret = obj1.Addition();
+console.log("Addition of obj1 : "+Ret);     // 21
 
-}
+Ret = obj1.Substraction();
+console.log("Substraction of obj1 : "+Ret); // 1
 
-var obj1 = new Arithmetic(11,90)
-var obj2 = new Arithmetic(67,9)
+Ret = obj2.Addition();
+console.log("Addition of obj2 : "+Ret);     // 36
 
-var Ret  : number = 0
-Ret= obj1.Addition()
-console.log(" Addition : "+Ret)
-Ret = obj1.Substraction()
-console.log(" Substraction : "+Ret)
-Ret = obj2.Addition()
-console.log(" Addition : "+Ret)
-Ret = obj2.Substraction()
-console.log(" Substraction : "+Ret)
+Ret = obj2.Substraction();
+console.log("Substraction of obj2 : "+Ret); // 6
