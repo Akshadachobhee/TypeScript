@@ -18,6 +18,7 @@ var Student = /** @class */ (function () {
         console.log("City of student : " + this.City);
     };
     return Student;
+    
 }());
 var Obj307 = new Student("Akshada", 97, 23, "Pune");
 Obj307.Display(); // Method call / Function call
